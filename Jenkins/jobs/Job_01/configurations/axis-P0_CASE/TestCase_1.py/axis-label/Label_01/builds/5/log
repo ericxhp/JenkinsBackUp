@@ -1,0 +1,38 @@
+Started by upstream project "[8mha:////4AsnXMXUJ26cN8cEE49iTO2jHKdYjMTE/6u/FwgXVV7IAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/az8JH2v/KR4A0N9AMcrNJLBAAAA[0mJob_01" build number [8mha:////4KyD64Tbdw3vAUra1+7E5+zsKuf4nKPQNE0fK1VZZickAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBl79rPwkfa/8pHgDQ31TAKvVvjzCAAAA[0m5
+originally caused by:
+ Started by upstream project "[8mha:////4BDwpXwMJoAd0AnTEkg6Xb3l+uFmGinL33WeBU46hPzmAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JP2AxKLUvJJ4LyATAAAlWn7FAAAA[0mParent_Job" build number [8mha:////4E1K0VrVfFzCyGYiM0zzxrGKMGmZSrrJRbQsYf5XFYVCAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkH9rPwk/YDEotS8kngvINMUAP9McTXGAAAA[0m5
+ originally caused by:
+  Started by user [8mha:////4CNdTQL+/DZ8jWnhhqHr4Iivs1oKOhaWGIt8iS/s6azzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL91KLM5IpSAOZdoDHBAAAA[0mericxu
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4BM7N+kzShZYf5lh1PpGthqOHxenghAij9bUHm9PMUrgAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6JanFQCreEAA+vzwIxwAAAA==[0mtester_1 (Label_01) in workspace /JenkinsWorkSpace/DRIVE
+Cloning the remote Git repository
+Cloning repository https://github.com/ericxhp/CTR.git
+ > git init /JenkinsWorkSpace/DRIVE/CTR # timeout=10
+Fetching upstream changes from https://github.com/ericxhp/CTR.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+Setting http proxy: proxy.micron.com:8080
+ > git fetch --tags --progress https://github.com/ericxhp/CTR.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/ericxhp/CTR.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ericxhp/CTR.git # timeout=10
+Cleaning workspace
+ > git rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git clean -fdx # timeout=10
+Fetching upstream changes from https://github.com/ericxhp/CTR.git
+using GIT_ASKPASS to set credentials 
+Setting http proxy: proxy.micron.com:8080
+ > git fetch --tags --progress https://github.com/ericxhp/CTR.git +refs/heads/*:refs/remotes/origin/*
+Checking out Revision d87dee75247030250a1476df80664a3c791f60f1 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d87dee75247030250a1476df80664a3c791f60f1
+Commit message: "Add new print"
+ > git rev-list d87dee75247030250a1476df80664a3c791f60f1 # timeout=10
+[DRIVE] $ /bin/sh -xe /tmp/jenkins8052186494289553647.sh
++ echo 'execute test case'
+execute test case
++ python2.7 TestCase_2.py TestCase_1.py
+python2.7: can't open file 'TestCase_2.py': [Errno 2] No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

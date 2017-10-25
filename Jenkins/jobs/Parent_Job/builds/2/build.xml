@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.tikal.jenkins.plugins.multijob.MultiJobBuild plugin="jenkins-multijob-plugin@1.28">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>COMMIT_ID</name>
+          <description></description>
+          <value>master</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames class="hudson.model.ParametersDefinitionProperty$1">
+        <outer-class>
+          <parameterDefinitions>
+            <hudson.model.StringParameterDefinition>
+              <name>COMMIT_ID</name>
+              <description></description>
+              <defaultValue>master</defaultValue>
+            </hudson.model.StringParameterDefinition>
+          </parameterDefinitions>
+        </outer-class>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>ericxu</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.jobConfigHistory.JobConfigBadgeAction plugin="jobConfigHistory@2.18">
+      <configDates>
+        <string>2017-10-18_10-06-38</string>
+        <string>2017-10-18_10-02-56</string>
+      </configDates>
+    </hudson.plugins.jobConfigHistory.JobConfigBadgeAction>
+    <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.5"/>
+    <hudson.plugins.git.util.BuildData plugin="git@3.6.0">
+      <buildsByBranchName>
+        <entry>
+          <string>origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.5.0">
+              <sha1>d87dee75247030250a1476df80664a3c791f60f1</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>2</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <scmName></scmName>
+      <remoteUrls>
+        <string>https://github.com/ericxhp/CTR.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.6.0">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>C:\Program Files (x86)\Jenkins\workspace\Parent_Job</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <org.jenkinsci.plugins.envinject.EnvInjectBuilderContributionAction plugin="envinject@2.1.5"/>
+    <org.jenkinsci.plugins.envinject.EnvInjectBuilderContributionAction plugin="envinject@2.1.5"/>
+    <org.jenkinsci.plugins.envinject.EnvInjectBuilderContributionAction plugin="envinject@2.1.5"/>
+    <org.jenkinsci.plugins.envinject.EnvInjectBuilderContributionAction plugin="envinject@2.1.5"/>
+  </actions>
+  <queueId>4</queueId>
+  <timestamp>1508292404039</timestamp>
+  <startTime>1508292404043</startTime>
+  <result>SUCCESS</result>
+  <duration>28531</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>C:\Program Files (x86)\Jenkins\workspace\Parent_Job</workspace>
+  <hudsonVersion>2.73.1</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.6.0">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+  <subBuilds class="java.util.concurrent.CopyOnWriteArrayList">
+    <com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+      <parentJobName>Parent_Job</parentJobName>
+      <parentBuildNumber>2</parentBuildNumber>
+      <jobName>Job_01</jobName>
+      <buildNumber>2</buildNumber>
+      <phaseName>Execute Job_01</phaseName>
+      <result>SUCCESS</result>
+      <icon>blue.png</icon>
+      <duration>15 sec</duration>
+      <url>job/Job_01/2/</url>
+      <retry>false</retry>
+      <aborted>false</aborted>
+      <build class="matrix-build" plugin="matrix-project@1.12">
+        <actions>
+          <com.tikal.jenkins.plugins.multijob.MultiJobParametersAction plugin="jenkins-multijob-plugin@1.28">
+            <safeParameters class="sorted-set"/>
+            <parameters class="java.util.Arrays$ArrayList">
+              <a class="hudson.model.ParameterValue-array">
+                <hudson.model.StringParameterValue>
+                  <name>COMMIT_ID</name>
+                  <value>master</value>
+                </hudson.model.StringParameterValue>
+                <hudson.model.StringParameterValue>
+                  <name>CASE_LIST</name>
+                  <value>TestCase_2.py TestCase_1.py</value>
+                </hudson.model.StringParameterValue>
+              </a>
+            </parameters>
+            <parameterDefinitionNames class="hudson.model.ParametersDefinitionProperty$1">
+              <outer-class>
+                <parameterDefinitions>
+                  <hudson.model.StringParameterDefinition>
+                    <name>COMMIT_ID</name>
+                    <description></description>
+                    <defaultValue>master</defaultValue>
+                  </hudson.model.StringParameterDefinition>
+                </parameterDefinitions>
+              </outer-class>
+            </parameterDefinitionNames>
+            <parameters class="java.util.Arrays$ArrayList" defined-in="com.tikal.jenkins.plugins.multijob.MultiJobParametersAction" reference="../parameters"/>
+          </com.tikal.jenkins.plugins.multijob.MultiJobParametersAction>
+          <com.tikal.jenkins.plugins.multijob.MultiJobBuilder_-MultiJobAction plugin="jenkins-multijob-plugin@1.28">
+            <buildNumber>2</buildNumber>
+            <index>1</index>
+            <outer-class>
+              <phaseName>Execute Job_01</phaseName>
+              <phaseJobs>
+                <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+                  <jobName>Job_01</jobName>
+                  <currParams>true</currParams>
+                  <exposedSCM>false</exposedSCM>
+                  <disableJob>false</disableJob>
+                  <parsingRulesPath></parsingRulesPath>
+                  <maxRetries>0</maxRetries>
+                  <enableRetryStrategy>false</enableRetryStrategy>
+                  <enableCondition>false</enableCondition>
+                  <abortAllJob>true</abortAllJob>
+                  <condition></condition>
+                  <configs>
+                    <hudson.plugins.parameterizedtrigger.PredefinedBuildParameters plugin="parameterized-trigger@2.35.2">
+                      <properties>CASE_LIST=${CASE_LIST}
+COMMIT_ID=${COMMIT_ID}</properties>
+                      <textParamValueOnNewLine>false</textParamValueOnNewLine>
+                    </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
+                  </configs>
+                  <killPhaseOnJobResultCondition>FAILURE</killPhaseOnJobResultCondition>
+                  <buildOnlyIfSCMChanges>false</buildOnlyIfSCMChanges>
+                  <applyConditionOnlyIfNoSCMChanges>false</applyConditionOnlyIfNoSCMChanges>
+                </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+              </phaseJobs>
+              <continuationCondition>ALWAYS</continuationCondition>
+              <executionType>PARALLEL</executionType>
+            </outer-class>
+          </com.tikal.jenkins.plugins.multijob.MultiJobBuilder_-MultiJobAction>
+          <hudson.model.CauseAction>
+            <causeBag class="linked-hash-map">
+              <entry>
+                <hudson.model.Cause_-UpstreamCause>
+                  <upstreamProject>Parent_Job</upstreamProject>
+                  <upstreamUrl>job/Parent_Job/</upstreamUrl>
+                  <upstreamBuild>2</upstreamBuild>
+                  <upstreamCauses>
+                    <hudson.model.Cause_-UserIdCause reference="../../../../../../../../../../actions/hudson.model.CauseAction/causeBag/entry/hudson.model.Cause_-UserIdCause"/>
+                  </upstreamCauses>
+                </hudson.model.Cause_-UpstreamCause>
+                <int>1</int>
+              </entry>
+            </causeBag>
+          </hudson.model.CauseAction>
+          <hudson.plugins.jobConfigHistory.JobConfigBadgeAction plugin="jobConfigHistory@2.18">
+            <configDates>
+              <string>2017-10-18_10-06-06</string>
+              <string>2017-10-18_09-55-43</string>
+            </configDates>
+          </hudson.plugins.jobConfigHistory.JobConfigBadgeAction>
+          <org.jenkinsci.plugins.envinject.EnvInjectPluginAction plugin="envinject@2.1.5"/>
+          <hudson.plugins.git.util.BuildData plugin="git@3.6.0">
+            <buildsByBranchName>
+              <entry>
+                <string>origin/master</string>
+                <hudson.plugins.git.util.Build>
+                  <marked plugin="git-client@2.5.0">
+                    <sha1>d87dee75247030250a1476df80664a3c791f60f1</sha1>
+                    <branches class="list">
+                      <hudson.plugins.git.Branch>
+                        <sha1 reference="../../../sha1"/>
+                        <name>origin/master</name>
+                      </hudson.plugins.git.Branch>
+                    </branches>
+                  </marked>
+                  <revision reference="../marked"/>
+                  <hudsonBuildNumber>2</hudsonBuildNumber>
+                </hudson.plugins.git.util.Build>
+              </entry>
+            </buildsByBranchName>
+            <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+            <scmName></scmName>
+            <remoteUrls>
+              <string>https://github.com/ericxhp/CTR.git</string>
+            </remoteUrls>
+          </hudson.plugins.git.util.BuildData>
+          <hudson.plugins.git.GitTagAction plugin="git@3.6.0">
+            <tags class="hudson.util.CopyOnWriteMap$Tree">
+              <entry>
+                <string>origin/master</string>
+                <list/>
+              </entry>
+            </tags>
+            <ws>C:\Program Files (x86)\Jenkins\workspace\Job_01</ws>
+          </hudson.plugins.git.GitTagAction>
+          <hudson.scm.SCMRevisionState_-None reference="../../../../../actions/hudson.scm.SCMRevisionState_-None"/>
+        </actions>
+        <queueId>5</queueId>
+        <timestamp>1508292414291</timestamp>
+        <startTime>1508292414295</startTime>
+        <result>SUCCESS</result>
+        <duration>15309</duration>
+        <charset>windows-1252</charset>
+        <keepLog>false</keepLog>
+        <builtOn></builtOn>
+        <workspace>C:\Program Files (x86)\Jenkins\workspace\Job_01</workspace>
+        <hudsonVersion>2.73.1</hudsonVersion>
+        <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.6.0">
+          <authorOrCommitter>false</authorOrCommitter>
+        </scm>
+        <culprits class="com.google.common.collect.EmptyImmutableSortedSet" reference="../../../../culprits"/>
+        <axes>
+          <ca.silvermaplesolutions.jenkins.plugins.daxis.DynamicAxis plugin="dynamic-axis@1.0.3">
+            <name>P0_CASE</name>
+            <values>
+              <string>CASE_LIST</string>
+            </values>
+            <varName>CASE_LIST</varName>
+            <axisValues>
+              <string>TestCase_2.py</string>
+              <string>TestCase_1.py</string>
+            </axisValues>
+          </ca.silvermaplesolutions.jenkins.plugins.daxis.DynamicAxis>
+          <hudson.matrix.LabelAxis>
+            <name>label</name>
+            <values>
+              <string>Label_01</string>
+            </values>
+          </hudson.matrix.LabelAxis>
+        </axes>
+      </build>
+    </com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild>
+  </subBuilds>
+  <changeSets>
+    <run class="com.tikal.jenkins.plugins.multijob.MultiJobBuild" reference="../.."/>
+    <build class="com.tikal.jenkins.plugins.multijob.MultiJobBuild" reference="../.."/>
+    <browser class="hudson.plugins.git.browser.GithubWeb" plugin="git@3.6.0">
+      <url>https://github.com/ericxhp/CTR/</url>
+    </browser>
+  </changeSets>
+  <subBuildsMap>
+    <entry>
+      <string>Execute Job_01Job_012</string>
+      <com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild reference="../../../subBuilds/com.tikal.jenkins.plugins.multijob.MultiJobBuild_-SubBuild"/>
+    </entry>
+  </subBuildsMap>
+</com.tikal.jenkins.plugins.multijob.MultiJobBuild>

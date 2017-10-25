@@ -1,0 +1,35 @@
+Started by upstream project "[8mha:////4BDwpXwMJoAd0AnTEkg6Xb3l+uFmGinL33WeBU46hPzmAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JP2AxKLUvJJ4LyATAAAlWn7FAAAA[0mParent_Job" build number [8mha:////4E1K0VrVfFzCyGYiM0zzxrGKMGmZSrrJRbQsYf5XFYVCAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkH9rPwk/YDEotS8kngvINMUAP9McTXGAAAA[0m5
+originally caused by:
+ Started by user [8mha:////4CNdTQL+/DZ8jWnhhqHr4Iivs1oKOhaWGIt8iS/s6azzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL91KLM5IpSAOZdoDHBAAAA[0mericxu
+[EnvInject] - Loading node environment variables.
+Building on master in workspace C:\Program Files (x86)\Jenkins\${HOST_JOB_WORK_SPACE}\01
+Cloning the remote Git repository
+Cloning repository https://github.com/ericxhp/CTR.git
+ > git.exe init C:\Program Files (x86)\Jenkins\${HOST_JOB_WORK_SPACE}\01\CTR # timeout=10
+Fetching upstream changes from https://github.com/ericxhp/CTR.git
+ > git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+Setting http proxy: proxy.micron.com:8080
+ > git.exe fetch --tags --progress https://github.com/ericxhp/CTR.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://github.com/ericxhp/CTR.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/ericxhp/CTR.git # timeout=10
+Cleaning workspace
+ > git.exe rev-parse --verify HEAD # timeout=10
+No valid HEAD. Skipping the resetting
+ > git.exe clean -fdx # timeout=10
+Fetching upstream changes from https://github.com/ericxhp/CTR.git
+using GIT_ASKPASS to set credentials 
+Setting http proxy: proxy.micron.com:8080
+ > git.exe fetch --tags --progress https://github.com/ericxhp/CTR.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "origin/master^{commit}" # timeout=10
+Checking out Revision d87dee75247030250a1476df80664a3c791f60f1 (origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f d87dee75247030250a1476df80664a3c791f60f1
+Commit message: "Add new print"
+ > git.exe rev-list d87dee75247030250a1476df80664a3c791f60f1 # timeout=10
+Triggering [8mha:////4LRWTwMh5ZV3UiN56s7UZtRDZkUmw+5FpxZBC39TT56aAAAAuR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgZD/az8JH2v/KR4A0P9AIN4Z8dgV9uQ1OIS58Ti1HgjvYJKnZzEpNQcWx8QCVIEAM44USXmAAAA[0mJob_01 » TestCase_2.py,Label_01
+Triggering [8mha:////4BsKiErIX8W+PKAMj8nB76jymSN/ZPgPoXiwynzOVfO/AAAAuR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgZD/az8JH2v/KR4A0P9AIN4Z8dgV9uQ1OIS58Ti1HhDvYJKnZzEpNQcWx8QCVIEAAR1+IrmAAAA[0mJob_01 » TestCase_1.py,Label_01
+[8mha:////4LRWTwMh5ZV3UiN56s7UZtRDZkUmw+5FpxZBC39TT56aAAAAuR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgZD/az8JH2v/KR4A0P9AIN4Z8dgV9uQ1OIS58Ti1HgjvYJKnZzEpNQcWx8QCVIEAM44USXmAAAA[0mJob_01 » TestCase_2.py,Label_01 completed with result FAILURE
+[8mha:////4BsKiErIX8W+PKAMj8nB76jymSN/ZPgPoXiwynzOVfO/AAAAuR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgZD/az8JH2v/KR4A0P9AIN4Z8dgV9uQ1OIS58Ti1HhDvYJKnZzEpNQcWx8QCVIEAAR1+IrmAAAA[0mJob_01 » TestCase_1.py,Label_01 completed with result FAILURE
+Finished: FAILURE

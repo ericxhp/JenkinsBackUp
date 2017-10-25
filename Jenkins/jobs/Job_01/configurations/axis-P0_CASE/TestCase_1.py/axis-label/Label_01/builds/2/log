@@ -1,0 +1,97 @@
+Started by upstream project "[8mha:////4AsnXMXUJ26cN8cEE49iTO2jHKdYjMTE/6u/FwgXVV7IAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/az8JH2v/KR4A0N9AMcrNJLBAAAA[0mJob_01" build number [8mha:////4P1T41r0I/oZdAAMQIs9MfoYRthrMHS4lQDQYmo1DvF4AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBl79rPwkfa/8pHgDQ30jAAhA2qLCAAAA[0m2
+originally caused by:
+ Started by upstream project "[8mha:////4BDwpXwMJoAd0AnTEkg6Xb3l+uFmGinL33WeBU46hPzmAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JP2AxKLUvJJ4LyATAAAlWn7FAAAA[0mParent_Job" build number [8mha:////4N9UhnXGamrvgFJjMSlb+sKiAIzX8+Kv4p2CoWqd80sdAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkH9rPwk/YDEotS8kngvINMIAFzZFavGAAAA[0m2
+ originally caused by:
+  Started by user [8mha:////4CNdTQL+/DZ8jWnhhqHr4Iivs1oKOhaWGIt8iS/s6azzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL91KLM5IpSAOZdoDHBAAAA[0mericxu
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4BM7N+kzShZYf5lh1PpGthqOHxenghAij9bUHm9PMUrgAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6JanFQCreEAA+vzwIxwAAAA==[0mtester_1 (Label_01) in workspace /home/ufs/JenkinsWorkSpace/Slave_Space/workspace/Job_01/P0_CASE/TestCase_1.py/label/Label_01
+Cloning the remote Git repository
+Cloning repository https://github.com/ericxhp/CTR.git
+ > git init /home/ufs/JenkinsWorkSpace/Slave_Space/workspace/Job_01/P0_CASE/TestCase_1.py/label/Label_01 # timeout=10
+Fetching upstream changes from https://github.com/ericxhp/CTR.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+Setting http proxy: proxy.micron.com:8080
+ > git fetch --tags --progress https://github.com/ericxhp/CTR.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/ericxhp/CTR.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ericxhp/CTR.git # timeout=10
+Fetching upstream changes from https://github.com/ericxhp/CTR.git
+using GIT_ASKPASS to set credentials 
+Setting http proxy: proxy.micron.com:8080
+ > git fetch --tags --progress https://github.com/ericxhp/CTR.git +refs/heads/*:refs/remotes/origin/*
+Checking out Revision d87dee75247030250a1476df80664a3c791f60f1 (origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d87dee75247030250a1476df80664a3c791f60f1
+Commit message: "Add new print"
+First time build. Skipping changelog.
+[Label_01] $ /bin/sh -xe /tmp/jenkins5362057564844719116.sh
++ echo 'execute test case'
+execute test case
++ python2.7 TestCase_2.py TestCase_1.py
+This Test case 2
+env list
+COMMIT_ID : master
+JENKINS_HOME : C:\Program Files (x86)\Jenkins
+BUILD_CAUSE : UPSTREAMTRIGGER
+JOB_BASE_NAME : P0_CASE=TestCase_1.py,label=Label_01
+HUDSON_URL : http://10.166.200.114:8080/
+BUILD_URL : http://10.166.200.114:8080/job/Job_01/P0_CASE=TestCase_1.py,label=Label_01/2/
+LESSOPEN : ||/usr/bin/lesspipe.sh %s
+BUILD_TAG : jenkins-Job_01-P0_CASE=TestCase_1.py,label=Label_01-2
+SSH_CLIENT : 10.166.200.114 61763 22
+JENKINS_URL : http://10.166.200.114:8080/
+LOGNAME : ufs
+USER : ufs
+WORKSPACE : /home/ufs/JenkinsWorkSpace/Slave_Space/workspace/Job_01/P0_CASE/TestCase_1.py/label/Label_01
+PATH : /usr/local/sbin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/sigsw/el6/bin:/opt/sigsw/el7/bin:/usr/local/DS-5_v5.23.1/sw/ARMCompiler5.06u1/bin:/root/bin:/usr/local/git/bin:/usr/ghs/comp_201516:/usr/ghs/multi_616
+QTDIR : /usr/lib64/qt-3.3
+JOB_NAME : Job_01/P0_CASE=TestCase_1.py,label=Label_01
+QT_PLUGIN_PATH : /usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+LANG : en_US.UTF-8
+RUN_DISPLAY_URL : http://10.166.200.114:8080/job/Job_01/P0_CASE=TestCase_1.py,label=Label_01/2/display/redirect
+SHELL : /bin/bash
+TZ : Asia/Shanghai
+QTINC : /usr/lib64/qt-3.3/include
+BUILD_USER_ID : ericxu
+HUDSON_HOME : C:\Program Files (x86)\Jenkins
+label : Label_01
+NODE_LABELS : Label_01 tester_1
+ROOT_BUILD_CAUSE_MANUALTRIGGER : true
+BUILD_USER : ericxu
+HOME : /home/ufs
+ROOT_BUILD_CAUSE : MANUALTRIGGER
+no_proxy : localhost,localhost.localdomain,.micron.com
+BUILD_ID : 2
+BUILD_USER_FIRST_NAME : ericxu
+P0_CASE : TestCase_1.py
+XDG_RUNTIME_DIR : /run/user/1339
+QTLIB : /usr/lib64/qt-3.3/lib
+JOB_URL : http://10.166.200.114:8080/job/Job_01/P0_CASE=TestCase_1.py,label=Label_01/
+CASE_LIST : TestCase_2.py TestCase_1.py
+BUILD_USER_EMAIL : ericxu@micron.com
+GIT_BRANCH : origin/master
+GIT_COMMIT : d87dee75247030250a1476df80664a3c791f60f1
+RUN_CHANGES_DISPLAY_URL : http://10.166.200.114:8080/job/Job_01/P0_CASE=TestCase_1.py,label=Label_01/2/display/redirect?page=changes
+QT_GRAPHICSSYSTEM_CHECKED : 1
+NLSPATH : /usr/dt/lib/nls/msg/%L/%N.cat
+XDG_SESSION_ID : 305
+_ : /bin/python2.7
+BUILD_CAUSE_UPSTREAMTRIGGER : true
+BUILD_NUMBER : 2
+KDEDIRS : /usr
+HUDSON_COOKIE : eb0cccaf-1282-477b-9137-0fe9e3a5816f
+JOB_DISPLAY_URL : http://10.166.200.114:8080/job/Job_01/P0_CASE=TestCase_1.py,label=Label_01/display/redirect
+ARMLMD_LICENSE_FILE : 8897@shlacgflx02
+HUDSON_SERVER_COOKIE : fd6e26c2592b0ada
+EXECUTOR_NUMBER : 0
+NODE_NAME : tester_1
+SHLVL : 2
+PWD : /home/ufs/JenkinsWorkSpace/Slave_Space/workspace/Job_01/P0_CASE/TestCase_1.py/label/Label_01
+JENKINS_SERVER_COOKIE : fd6e26c2592b0ada
+BUILD_DISPLAY_NAME : #2
+XFILESEARCHPATH : /usr/dt/app-defaults/%L/Dt
+MAIL : /var/mail/ufs
+SSH_CONNECTION : 10.166.200.114 61763 10.166.94.106 22
+GIT_URL : https://github.com/ericxhp/CTR.git
+Finished: SUCCESS

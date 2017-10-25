@@ -1,0 +1,25 @@
+Started by upstream project "[8mha:////4Kt6Vdd3mwd9b/fGWUoXoBlMzTM2NnhhNGoB/6bh8QlqAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/az8JH2v/KR4AyN9AAR4GbnBAAAA[0mJob_02" build number [8mha:////4DuykPF7b89TUh+b+x9c56bKbu2siye2MvKaKjNCXsqTAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBl79rPwkfa/8pHgDI31jAMfOm9fCAAAA[0m3
+originally caused by:
+ Started by upstream project "[8mha:////4BDwpXwMJoAd0AnTEkg6Xb3l+uFmGinL33WeBU46hPzmAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JP2AxKLUvJJ4LyATAAAlWn7FAAAA[0mParent_Job" build number [8mha:////4Ghcq13QQBkEfU/F7zTJVzWPdN07ow4z4DTZofAhdipnAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwmoBn6WflJ+gGJRal5JfFeQKahAQANr64nxwAAAA==[0m10
+ originally caused by:
+  Started by user [8mha:////4CNdTQL+/DZ8jWnhhqHr4Iivs1oKOhaWGIt8iS/s6azzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL91KLM5IpSAOZdoDHBAAAA[0mericxu
+[EnvInject] - Loading node environment variables.
+ERROR: SEVERE ERROR occurs
+[8mha:////4MFRRet9MTHsWAZf+3lk75HmttJNUgr6ejs8+V6gczlAAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0morg.jenkinsci.lib.envinject.EnvInjectException: java.lang.InterruptedException
+	at org.jenkinsci.plugins.envinject.EnvInjectListener.loadEnvironmentVariablesNode(EnvInjectListener.java:88)
+	at org.jenkinsci.plugins.envinject.EnvInjectListener.setUpEnvironment(EnvInjectListener.java:44)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.createLauncher(AbstractBuild.java:534)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:454)
+	at hudson.model.Run.execute(Run.java:1737)
+	at hudson.matrix.MatrixRun.run(MatrixRun.java:146)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:419)
+Caused by: java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at hudson.remoting.Request.call(Request.java:147)
+	at hudson.remoting.Channel.call(Channel.java:838)
+	at hudson.FilePath.act(FilePath.java:1082)
+	at org.jenkinsci.plugins.envinject.service.EnvInjectActionSetter.addEnvVarsToRun(EnvInjectActionSetter.java:59)
+	at org.jenkinsci.plugins.envinject.EnvInjectListener.loadEnvironmentVariablesNode(EnvInjectListener.java:83)
+	... 7 more
+Finished: FAILURE

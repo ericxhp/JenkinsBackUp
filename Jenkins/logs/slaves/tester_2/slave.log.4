@@ -1,0 +1,108 @@
+[10/19/17 15:29:51] [SSH] Opening SSH connection to shlufs06:22.
+[10/19/17 15:29:51] [SSH] WARNING: SSH Host Keys are not being verified. Man-in-the-middle attacks may be possible against this connection.
+[10/19/17 15:29:52] [SSH] Authentication successful.
+[10/19/17 15:29:53] [SSH] The remote user's environment is:
+ARMLMD_LICENSE_FILE=8897@shlacgflx02
+BASH=/usr/bin/bash
+BASHOPTS=cmdhist:extquote:force_fignore:hostcomplete:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=()
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_EXECUTION_STRING=set
+BASH_LINENO=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]="4" [1]="2" [2]="46" [3]="1" [4]="release" [5]="x86_64-redhat-linux-gnu")
+BASH_VERSION='4.2.46(1)-release'
+DIRSTACK=()
+EUID=1339
+GROUPS=()
+HOME=/home/ufs
+HOSTNAME=shlufs06
+HOSTTYPE=x86_64
+ID=1339
+IFS=$' \t\n'
+KDEDIRS=/usr
+LANG=en_US.UTF-8
+LESSOPEN='||/usr/bin/lesspipe.sh %s'
+LOGNAME=ufs
+MACHTYPE=x86_64-redhat-linux-gnu
+MAIL=/var/mail/ufs
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PATH=/usr/local/sbin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/sigsw/el6/bin:/opt/sigsw/el7/bin:/usr/local/DS-5_v5.23.1/sw/ARMCompiler5.06u1/bin:/root/bin:/usr/local/git/bin:/usr/ghs/comp_201516:/usr/ghs/multi_616
+PIPESTATUS=([0]="0")
+PPID=4901
+PS4='+ '
+PWD=/home/ufs
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+QTLIB=/usr/lib64/qt-3.3/lib
+QT_GRAPHICSSYSTEM_CHECKED=1
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:hashall:interactive-comments
+SHLVL=1
+SSH_CLIENT='10.166.200.114 51338 22'
+SSH_CONNECTION='10.166.200.114 51338 10.166.94.106 22'
+TERM=dumb
+TZ=Asia/Shanghai
+UID=1339
+USER=ufs
+XDG_RUNTIME_DIR=/run/user/1339
+XDG_SESSION_ID=46
+_=PATH
+no_proxy=localhost,localhost.localdomain,.micron.com
+[10/19/17 15:29:54] [SSH] Checking java version of java
+[10/19/17 15:29:55] [SSH] java -version returned 1.7.0_79.
+[10/19/17 15:29:55] [SSH] Checking java version of /usr/bin/java
+[10/19/17 15:29:55] [SSH] /usr/bin/java -version returned 1.7.0_79.
+[10/19/17 15:29:55] [SSH] Checking java version of /usr/java/default/bin/java
+[10/19/17 15:29:56] [SSH] /usr/java/default/bin/java -version returned 1.8.0_141.
+[10/19/17 15:29:56] [SSH] Starting sftp client.
+[10/19/17 15:29:57] [SSH] Copying latest slave.jar...
+java.io.IOException: Could not copy slave.jar into '/home/ufs/JenkinsWorkSpace/Slave_Space' on slave
+	at hudson.plugins.sshslaves.SSHLauncher.copySlaveJar(SSHLauncher.java:1152)
+	at hudson.plugins.sshslaves.SSHLauncher.access$400(SSHLauncher.java:145)
+	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:816)
+	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:793)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Could not copy slave.jar to '/home/ufs/JenkinsWorkSpace/Slave_Space/slave.jar' on slave
+	at hudson.plugins.sshslaves.SSHLauncher.copySlaveJar(SSHLauncher.java:1147)
+	... 7 more
+Caused by: java.io.IOException: SSH channel is closed
+	at com.trilead.ssh2.channel.ChannelManager.ioException(ChannelManager.java:1543)
+	at com.trilead.ssh2.channel.ChannelManager.sendData(ChannelManager.java:373)
+	at com.trilead.ssh2.channel.ChannelOutputStream.write(ChannelOutputStream.java:63)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at com.trilead.ssh2.SFTPv3Client.sendMessage(SFTPv3Client.java:203)
+	at com.trilead.ssh2.SFTPv3Client.sendMessage(SFTPv3Client.java:208)
+	at com.trilead.ssh2.SFTPv3Client.closeHandle(SFTPv3Client.java:269)
+	at com.trilead.ssh2.SFTPv3Client.closeFile(SFTPv3Client.java:1379)
+	at hudson.plugins.sshslaves.SFTPClient$1.close(SFTPClient.java:106)
+	at hudson.plugins.sshslaves.SSHLauncher.copySlaveJar(SSHLauncher.java:1141)
+	... 7 more
+Caused by: java.io.IOException: The connection is being shutdown
+	at com.trilead.ssh2.channel.ChannelManager.handleEndMessage(ChannelManager.java:1525)
+	at com.trilead.ssh2.transport.TransportManager$1.run(TransportManager.java:535)
+	... 1 more
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.fill_buffer(CipherInputStream.java:41)
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.internal_read(CipherInputStream.java:52)
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.getBlock(CipherInputStream.java:79)
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.read(CipherInputStream.java:108)
+	at com.trilead.ssh2.transport.TransportConnection.receiveMessage(TransportConnection.java:232)
+	at com.trilead.ssh2.transport.TransportManager.receiveLoop(TransportManager.java:706)
+	at com.trilead.ssh2.transport.TransportManager$1.run(TransportManager.java:502)
+	... 1 more
+[10/19/17 15:30:26] Launch failed - cleaning up connection
+[10/19/17 15:30:26] [SSH] Connection closed.

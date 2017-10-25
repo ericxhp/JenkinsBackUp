@@ -1,0 +1,32 @@
+[10/19/17 16:49:52] [SSH] Opening SSH connection to shlufs06:22.
+[10/19/17 16:49:52] [SSH] WARNING: SSH Host Keys are not being verified. Man-in-the-middle attacks may be possible against this connection.
+ERROR: Unexpected error while trying to authenticate as ufs with credential=afaca555-57fd-42df-b597-72992256329f
+[8mha:////4MFRRet9MTHsWAZf+3lk75HmttJNUgr6ejs8+V6gczlAAAAAVx+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0mV3NWzufebKBsTA0NFEYMUmgZnCA1SyAABjCCFBQC2xNaiYAAAAA==[0mjava.io.IOException: Password authentication failed.
+	at com.trilead.ssh2.auth.AuthenticationManager.authenticatePassword(AuthenticationManager.java:346)
+	at com.trilead.ssh2.Connection.authenticateWithPassword(Connection.java:362)
+	at com.cloudbees.jenkins.plugins.sshcredentials.impl.TrileadSSHPasswordAuthenticator.doAuthenticate(TrileadSSHPasswordAuthenticator.java:113)
+	at com.cloudbees.jenkins.plugins.sshcredentials.SSHAuthenticator.authenticate(SSHAuthenticator.java:438)
+	at com.cloudbees.jenkins.plugins.sshcredentials.SSHAuthenticator.authenticate(SSHAuthenticator.java:458)
+	at hudson.plugins.sshslaves.SSHLauncher.openConnection(SSHLauncher.java:1321)
+	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:804)
+	at hudson.plugins.sshslaves.SSHLauncher$2.call(SSHLauncher.java:793)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: The connection is closed.
+	at com.trilead.ssh2.auth.AuthenticationManager.deQueue(AuthenticationManager.java:66)
+	at com.trilead.ssh2.auth.AuthenticationManager.getNextMessage(AuthenticationManager.java:89)
+	at com.trilead.ssh2.auth.AuthenticationManager.authenticatePassword(AuthenticationManager.java:321)
+	... 11 more
+Caused by: java.io.IOException: Cannot read full block, EOF reached.
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.getBlock(CipherInputStream.java:81)
+	at com.trilead.ssh2.crypto.cipher.CipherInputStream.read(CipherInputStream.java:108)
+	at com.trilead.ssh2.transport.TransportConnection.receiveMessage(TransportConnection.java:232)
+	at com.trilead.ssh2.transport.TransportManager.receiveLoop(TransportManager.java:706)
+	at com.trilead.ssh2.transport.TransportManager$1.run(TransportManager.java:502)
+	... 1 more
+[10/19/17 16:49:54] [SSH] Authentication failed.
+Authentication failed.
+[10/19/17 16:49:54] Launch failed - cleaning up connection
+[10/19/17 16:49:54] [SSH] Connection closed.

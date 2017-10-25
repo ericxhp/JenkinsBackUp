@@ -1,0 +1,18 @@
+Started by upstream project "[8mha:////4AsnXMXUJ26cN8cEE49iTO2jHKdYjMTE/6u/FwgXVV7IAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/az8JH2v/KR4A0N9AMcrNJLBAAAA[0mJob_01" build number [8mha:////4HRsvI2nPH8SL+0IdyZCQLImX9Z3gDcF3GejUgVh3VvhAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgY+/az8JH2v/KR4A0N9QwMAi2l0KsMAAAA=[0m10
+originally caused by:
+ Started by upstream project "[8mha:////4BDwpXwMJoAd0AnTEkg6Xb3l+uFmGinL33WeBU46hPzmAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JP2AxKLUvJJ4LyATAAAlWn7FAAAA[0mParent_Job" build number [8mha:////4Ghcq13QQBkEfU/F7zTJVzWPdN07ow4z4DTZofAhdipnAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwmoBn6WflJ+gGJRal5JfFeQKahAQANr64nxwAAAA==[0m10
+ originally caused by:
+  Started by user [8mha:////4CNdTQL+/DZ8jWnhhqHr4Iivs1oKOhaWGIt8iS/s6azzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL91KLM5IpSAOZdoDHBAAAA[0mericxu
+[EnvInject] - Loading node environment variables.
+Building remotely on [8mha:////4DEmjHY6P7lCzUKQQjYU6AJXlsLKFq10+6e9YAlTf0PAAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwOoBn6yfm5BaUlqUX6JanFQCreCACE7jWRxwAAAA==[0mtester_2 (Label_01) in workspace /JenkinsSpace/Job_01/P0_CASE=TestCase_2.py,label=Label_01/P0_CASE/TestCase_2.py/label/Label_01
+java.io.IOException: Failed to mkdirs: /JenkinsSpace/Job_01/P0_CASE=TestCase_2.py,label=Label_01/P0_CASE/TestCase_2.py/label/Label_01
+	at hudson.FilePath.mkdirs(FilePath.java:1171)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1210)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:566)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:86)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:491)
+	at hudson.model.Run.execute(Run.java:1737)
+	at hudson.matrix.MatrixRun.run(MatrixRun.java:146)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:419)
+Finished: FAILURE

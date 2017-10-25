@@ -1,0 +1,40 @@
+Started by user [8mha:////4CNdTQL+/DZ8jWnhhqHr4Iivs1oKOhaWGIt8iS/s6azzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL91KLM5IpSAOZdoDHBAAAA[0mericxu
+[EnvInject] - Loading node environment variables.
+Building on master in workspace C:\Program Files (x86)\Jenkins\workspace\Parent_Job
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/ericxhp/CTR.git # timeout=10
+Fetching upstream changes from https://github.com/ericxhp/CTR.git
+ > git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+Setting http proxy: proxy.micron.com:8080
+ > git.exe fetch --tags --progress https://github.com/ericxhp/CTR.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "origin/master^{commit}" # timeout=10
+Checking out Revision d87dee75247030250a1476df80664a3c791f60f1 (origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f d87dee75247030250a1476df80664a3c791f60f1
+Commit message: "Add new print"
+ > git.exe rev-list d87dee75247030250a1476df80664a3c791f60f1 # timeout=10
+Set build name.
+New build name is '#4_$BUILD_USER_ID '
+[Parent_Job] $ cmd /c call C:\WINDOWS\TEMP\jenkins3158288496470626107.bat
+
+C:\Program Files (x86)\Jenkins\workspace\Parent_Job>echo "Inject Env" 
+"Inject Env"
+
+C:\Program Files (x86)\Jenkins\workspace\Parent_Job>python -u SetEnv.py 
+Get test case list
+TestCase_2.py TestCase_1.py
+Create env file done
+
+C:\Program Files (x86)\Jenkins\workspace\Parent_Job>exit 0 
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties file path 'TEST_LIST_ENV.txt'
+[EnvInject] - Variables injected successfully.
+    >> Job status: [Job_01] the 'build only if scm changes' feature is disabled.
+Starting build job [8mha:////4MsosPhpvxH30TDxD4ImZZA1ZMKF9w8bA6AoxOS7xxQpAAAAjR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgK2Hg0c/KT9L3yk+KNzDUBwAUv5wIkQAAAA==[0mJob_01.
+Finished Build : [8mha:////4P9vvJJg4rfoWGeeDLQ19z+opA0eOq0Bdq+/sL5BNHyGAAAAkB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmHg18/KT9L3yk+KNzDUN9HXBwDGToUklAAAAA==[0m#4 of Job : [8mha:////4MsosPhpvxH30TDxD4ImZZA1ZMKF9w8bA6AoxOS7xxQpAAAAjR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgK2Hg0c/KT9L3yk+KNzDUBwAUv5wIkQAAAA==[0mJob_01 with status : [8mha:////4K8sRoHz20sb7MRHQJTwLZwm2ccms4gu0Qq5fjDCHGW5AAAAkh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgL2EQ08/KT9L3yk+KNzDUN9HXh+oCAGcW+62bAAAA[0mSUCCESS
+Set build name.
+New build name is '#4_ericxu '
+Variable with name 'BUILD_DISPLAY_NAME' already exists, current value: '#4_$BUILD_USER_ID ', new value: '#4_ericxu '
+Finished: SUCCESS

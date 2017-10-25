@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<proxy>
+  <name>proxy.micron.com</name>
+  <port>8080</port>
+  <userName>ericxu@micron.com</userName>
+  <secretPassword>{AQAAABAAAAAQxYK0+UlzRP9AxpgB2iVGuP4avtJ7PRJ/zmdT1zCovvg=}</secretPassword>
+</proxy>

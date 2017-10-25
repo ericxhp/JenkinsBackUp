@@ -1,0 +1,39 @@
+2017-10-17 17:38:45,814 INFO  - Starting ServiceWrapper in the service mode
+2017-10-17 17:38:45,836 INFO  - Starting C:\Program Files (x86)\Jenkins\jre\bin\java -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\Program Files (x86)\Jenkins\jenkins.war" --httpPort=8080 --webroot="C:\Program Files (x86)\Jenkins\war"
+2017-10-17 17:38:45,842 INFO  - Extension loaded: killOnStartup
+2017-10-17 17:38:45,845 WARN  - The requested PID file 'C:\Program Files (x86)\Jenkins\jenkins.pid' does not exist. The runaway process won't be checked
+2017-10-17 17:38:45,847 INFO  - Starting C:\Program Files (x86)\Jenkins\jre\bin\java -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\Program Files (x86)\Jenkins\jenkins.war" --httpPort=8080 --webroot="C:\Program Files (x86)\Jenkins\war"
+2017-10-17 17:38:45,925 INFO  - Started process 9480
+2017-10-17 17:38:45,929 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2017-10-17 17:38:45,933 INFO  - Recording PID of the started process:9480. PID file destination is C:\Program Files (x86)\Jenkins\jenkins.pid
+2017-10-17 17:55:10,885 DEBUG - Starting ServiceWrapper in the CLI mode
+2017-10-17 17:55:11,147 INFO  - Restarting the service with id 'Jenkins'
+2017-10-17 17:55:11,153 DEBUG - Completed. Exit code is 0
+2017-10-17 17:55:11,295 DEBUG - Starting ServiceWrapper in the CLI mode
+2017-10-17 17:55:11,761 INFO  - Restarting the service with id 'Jenkins'
+2017-10-17 17:55:11,781 INFO  - Stopping Jenkins
+2017-10-17 17:55:11,781 DEBUG - ProcessKill 9480
+2017-10-17 17:55:11,909 INFO  - Stopping process 9480
+2017-10-17 17:55:11,915 INFO  - Send SIGINT 9480
+2017-10-17 17:55:11,945 INFO  - SIGINT to9480 successful
+2017-10-17 17:55:11,948 INFO  - Finished Jenkins
+2017-10-17 17:55:11,950 DEBUG - Completed. Exit code is 0
+2017-10-17 17:55:13,092 INFO  - Starting ServiceWrapper in the service mode
+2017-10-17 17:55:13,108 DEBUG - Completed. Exit code is 0
+2017-10-17 17:55:13,116 INFO  - Starting C:\Program Files (x86)\Jenkins\jre\bin\java -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\Program Files (x86)\Jenkins\jenkins.war" --httpPort=8080 --webroot="C:\Program Files (x86)\Jenkins\war"
+2017-10-17 17:55:13,124 INFO  - Extension loaded: killOnStartup
+2017-10-17 17:55:13,129 DEBUG - Checking the potentially runaway process with PID=9480
+2017-10-17 17:55:13,138 DEBUG - No runaway process with PID=9480. The process has been already stopped.
+2017-10-17 17:55:13,139 INFO  - Starting C:\Program Files (x86)\Jenkins\jre\bin\java -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\Program Files (x86)\Jenkins\jenkins.war" --httpPort=8080 --webroot="C:\Program Files (x86)\Jenkins\war"
+2017-10-17 17:55:13,155 INFO  - Started process 9960
+2017-10-17 17:55:13,158 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2017-10-17 17:55:13,162 INFO  - Recording PID of the started process:9960. PID file destination is C:\Program Files (x86)\Jenkins\jenkins.pid
+2017-10-20 10:25:04,124 INFO  - Starting ServiceWrapper in the service mode
+2017-10-20 10:25:04,184 INFO  - Starting C:\Program Files (x86)\Jenkins\jre\bin\java -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\Program Files (x86)\Jenkins\jenkins.war" --httpPort=8080 --webroot="C:\Program Files (x86)\Jenkins\war"
+2017-10-20 10:25:04,194 INFO  - Extension loaded: killOnStartup
+2017-10-20 10:25:04,204 DEBUG - Checking the potentially runaway process with PID=9960
+2017-10-20 10:25:04,214 DEBUG - No runaway process with PID=9960. The process has been already stopped.
+2017-10-20 10:25:04,224 INFO  - Starting C:\Program Files (x86)\Jenkins\jre\bin\java -Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "C:\Program Files (x86)\Jenkins\jenkins.war" --httpPort=8080 --webroot="C:\Program Files (x86)\Jenkins\war"
+2017-10-20 10:25:04,254 INFO  - Started process 2120
+2017-10-20 10:25:04,264 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.SizeBasedRollingLogAppender
+2017-10-20 10:25:04,264 INFO  - Recording PID of the started process:2120. PID file destination is C:\Program Files (x86)\Jenkins\jenkins.pid

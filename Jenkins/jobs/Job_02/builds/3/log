@@ -1,0 +1,33 @@
+Started by upstream project "[8mha:////4BDwpXwMJoAd0AnTEkg6Xb3l+uFmGinL33WeBU46hPzmAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JP2AxKLUvJJ4LyATAAAlWn7FAAAA[0mParent_Job" build number [8mha:////4Ghcq13QQBkEfU/F7zTJVzWPdN07ow4z4DTZofAhdipnAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwmoBn6WflJ+gGJRal5JfFeQKahAQANr64nxwAAAA==[0m10
+originally caused by:
+ Started by user [8mha:////4CNdTQL+/DZ8jWnhhqHr4Iivs1oKOhaWGIt8iS/s6azzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL91KLM5IpSAOZdoDHBAAAA[0mericxu
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /JenkinsSpace/Job_02
+Cloning the remote Git repository
+Cloning repository https://github.com/ericxhp/CTR.git
+ > git.exe init C:\JenkinsSpace\Job_02 # timeout=10
+Fetching upstream changes from https://github.com/ericxhp/CTR.git
+ > git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+Setting http proxy: proxy.micron.com:8080
+ > git.exe fetch --tags --progress https://github.com/ericxhp/CTR.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://github.com/ericxhp/CTR.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/ericxhp/CTR.git # timeout=10
+Fetching upstream changes from https://github.com/ericxhp/CTR.git
+using GIT_ASKPASS to set credentials 
+Setting http proxy: proxy.micron.com:8080
+ > git.exe fetch --tags --progress https://github.com/ericxhp/CTR.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "origin/master^{commit}" # timeout=10
+Checking out Revision d87dee75247030250a1476df80664a3c791f60f1 (origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f d87dee75247030250a1476df80664a3c791f60f1
+Commit message: "Add new print"
+ > git.exe rev-list d87dee75247030250a1476df80664a3c791f60f1 # timeout=10
+Triggering [8mha:////4EKwg6+7XFXwMpnRVaDj67O6KJFvNl/egkVCYnwqp+KFAAAAuR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgZD/az8JH2v/KR4AyP9AMN4Z8dgV9uQ1OIS58Ti1HhDvYJKnZzEpNQcWx8QCVIEAKnuPufmAAAA[0mJob_02 » TestCase_1.py,Label_02
+Triggering [8mha:////4BO0bcurDh7zomHbmZr3hPrDbV81OzgGac8R3S/Jo6W3AAAAuR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgZD/az8JH2v/KR4AyP9AMN4Z8dgV9uQ1OIS58Ti1HgjvYJKnZzEpNQcWx8QCVIEAGOjl0jmAAAA[0mJob_02 » TestCase_2.py,Label_02
+Aborted
+Aborted by [8mha:////4NTuvWJENPVsSv3qAkzamvKNUQ/8/lV8VgF5PVTP9e7uAAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL90rzsvPzyPAATbMabwgAAAA==[0munknown
+Interrupting [8mha:////4F2SyLDhlS8JvNwIcW7GC64YV9L7yg8n3MISQ+uWgabfAAAAux+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZj/az8JH2v/KR4AyP9AMN4Z8dgV9uQ1OIS58Ti1HgjvYJKnZzEpNQcWx8QCVJkrA8Af+o84OgAAAA=[0m#3
+Interrupting [8mha:////4EyV49SR4sKALi1aOtwwrJ0NvsE2QQz6ttrh8ir2iH5DAAAAux+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZj/az8JH2v/KR4AyP9AMN4Z8dgV9uQ1OIS58Ti1HhDvYJKnZzEpNQcWx8QCVJkrA8AP0dE2egAAAA=[0m#3
+Finished: ABORTED

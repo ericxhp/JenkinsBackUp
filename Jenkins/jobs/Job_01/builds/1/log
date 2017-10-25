@@ -1,0 +1,29 @@
+Started by upstream project "[8mha:////4BDwpXwMJoAd0AnTEkg6Xb3l+uFmGinL33WeBU46hPzmAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JP2AxKLUvJJ4LyATAAAlWn7FAAAA[0mParent_Job" build number [8mha:////4Kntg+rI6zbRs/k2Xlq31efW+tBFr6JWE4w6ZBNAFbCpAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBkH9rPwk/YDEotS8kngvINMQAOaIHDLGAAAA[0m1
+originally caused by:
+ Started by user [8mha:////4CNdTQL+/DZ8jWnhhqHr4Iivs1oKOhaWGIt8iS/s6azzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL91KLM5IpSAOZdoDHBAAAA[0mericxu
+[EnvInject] - Loading node environment variables.
+Building on master in workspace C:\Program Files (x86)\Jenkins\workspace\Job_01
+Cloning the remote Git repository
+Cloning repository https://github.com/ericxhp/CTR.git
+ > git.exe init C:\Program Files (x86)\Jenkins\workspace\Job_01 # timeout=10
+Fetching upstream changes from https://github.com/ericxhp/CTR.git
+ > git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+Setting http proxy: proxy.micron.com:8080
+ > git.exe fetch --tags --progress https://github.com/ericxhp/CTR.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://github.com/ericxhp/CTR.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/ericxhp/CTR.git # timeout=10
+Fetching upstream changes from https://github.com/ericxhp/CTR.git
+using GIT_ASKPASS to set credentials 
+Setting http proxy: proxy.micron.com:8080
+ > git.exe fetch --tags --progress https://github.com/ericxhp/CTR.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "origin/master^{commit}" # timeout=10
+Checking out Revision d87dee75247030250a1476df80664a3c791f60f1 (origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f d87dee75247030250a1476df80664a3c791f60f1
+Commit message: "Add new print"
+First time build. Skipping changelog.
+Triggering [8mha:////4BYK5SAiIVpJ+JWXNhRkcpdIQsWW1dnZUxmO1KD4DutnAAAAwh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy1EgYb/az8JH2v/KR4A0P9AIN4Z8dgV1sVVXOnENfgkHgfTyDh6hemV1JRomruopOTmJSaY+sDIkHqATWl3FXxAAAA[0mJob_01 » ${TEST_LIST_ENV.txt},Label_01
+[8mha:////4BYK5SAiIVpJ+JWXNhRkcpdIQsWW1dnZUxmO1KD4DutnAAAAwh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy1EgYb/az8JH2v/KR4A0P9AIN4Z8dgV1sVVXOnENfgkHgfTyDh6hemV1JRomruopOTmJSaY+sDIkHqATWl3FXxAAAA[0mJob_01 » ${TEST_LIST_ENV.txt},Label_01 completed with result FAILURE
+Finished: FAILURE

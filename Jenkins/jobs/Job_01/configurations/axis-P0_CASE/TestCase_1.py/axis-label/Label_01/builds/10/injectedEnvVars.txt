@@ -1,0 +1,55 @@
+ARMLMD_LICENSE_FILE=8897@shlacgflx02
+BUILD_CAUSE=UPSTREAMTRIGGER
+BUILD_CAUSE_UPSTREAMTRIGGER=true
+BUILD_DISPLAY_NAME=#10
+BUILD_ID=10
+BUILD_NUMBER=10
+BUILD_TAG=jenkins-Job_01-P0_CASE=TestCase_1.py,label=Label_01-10
+BUILD_URL=http://10.166.200.114:8080/job/Job_01/P0_CASE=TestCase_1.py,label=Label_01/10/
+CASE_LIST=TestCase_2.py TestCase_1.py
+COMMIT_ID=master
+EXECUTOR_NUMBER=0
+HOME=/home/ufs
+HUDSON_HOME=C:\Program Files (x86)\Jenkins
+HUDSON_SERVER_COOKIE=fd6e26c2592b0ada
+HUDSON_URL=http://10.166.200.114:8080/
+JENKINS_HOME=C:\Program Files (x86)\Jenkins
+JENKINS_SERVER_COOKIE=fd6e26c2592b0ada
+JENKINS_URL=http://10.166.200.114:8080/
+JOB_BASE_NAME=P0_CASE=TestCase_1.py,label=Label_01
+JOB_NAME=Job_01/P0_CASE=TestCase_1.py,label=Label_01
+JOB_URL=http://10.166.200.114:8080/job/Job_01/P0_CASE=TestCase_1.py,label=Label_01/
+KDEDIRS=/usr
+LANG=en_US.UTF-8
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LOGNAME=ufs
+MAIL=/var/mail/ufs
+NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat
+NODE_LABELS=Label_01 tester_1
+NODE_NAME=tester_1
+OLDPWD=/home/ufs
+P0_CASE=TestCase_1.py
+PATH=/usr/local/sbin:/sbin:/bin:/usr/sbin:/usr/bin:/opt/sigsw/el6/bin:/opt/sigsw/el7/bin:/usr/local/DS-5_v5.23.1/sw/ARMCompiler5.06u1/bin:/root/bin:/usr/local/git/bin:/usr/ghs/comp_201516:/usr/ghs/multi_616
+PWD=/home/ufs/JenkinsWorkSpace/Slave_Space
+QTDIR=/usr/lib64/qt-3.3
+QTINC=/usr/lib64/qt-3.3/include
+QTLIB=/usr/lib64/qt-3.3/lib
+QT_GRAPHICSSYSTEM_CHECKED=1
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+ROOT_BUILD_CAUSE=MANUALTRIGGER
+ROOT_BUILD_CAUSE_MANUALTRIGGER=true
+RUN_CHANGES_DISPLAY_URL=http://10.166.200.114:8080/job/Job_01/P0_CASE=TestCase_1.py,label=Label_01/10/display/redirect?page=changes
+RUN_DISPLAY_URL=http://10.166.200.114:8080/job/Job_01/P0_CASE=TestCase_1.py,label=Label_01/10/display/redirect
+SHELL=/bin/bash
+SHLVL=1
+SSH_CLIENT=10.166.200.114 50608 22
+SSH_CONNECTION=10.166.200.114 50608 10.166.94.106 22
+SUBMITTER=$BUILD_USER_ID 
+TZ=Asia/Shanghai
+USER=ufs
+XDG_RUNTIME_DIR=/run/user/1339
+XDG_SESSION_ID=3
+XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt
+_=/usr/java/default/bin/java
+label=Label_01
+no_proxy=localhost,localhost.localdomain,.micron.com

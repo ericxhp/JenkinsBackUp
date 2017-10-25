@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2017-10-18 02:03:04.82 UTC</timestamp>
+  <md5sum>dd1c1cb4b2444323d294dfe9d2021595</md5sum>
+  <fileName>Credential id=691f36c9-f377-4662-b26d-ccc81798cef9 name=xu_hp840706@163.com/******</fileName>
+  <usages>
+    <entry>
+      <string>Parent_Job</string>
+      <ranges>1-13</ranges>
+    </entry>
+    <entry>
+      <string>Job_01/P0_CASE=TestCase_2.py,label=Label_01</string>
+      <ranges>2-9,11-13</ranges>
+    </entry>
+    <entry>
+      <string>Job_02</string>
+      <ranges>1-6</ranges>
+    </entry>
+    <entry>
+      <string>Job_01</string>
+      <ranges>1-13</ranges>
+    </entry>
+    <entry>
+      <string>Job_02/P1_CASE=TestCase_1.py,label=Label_02</string>
+      <ranges>2,4-6</ranges>
+    </entry>
+    <entry>
+      <string>Job_02/P1_CASE=TestCase_1.py,label=Label_01</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>Job_02/P1_CASE=TestCase_2.py,label=Label_02</string>
+      <ranges>2,4-6</ranges>
+    </entry>
+    <entry>
+      <string>Job_02/P1_CASE=TestCase_2.py,label=Label_01</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>Job_01/P0_CASE=${TEST_LIST_ENV.txt},label=Label_01</string>
+      <ranges>1</ranges>
+    </entry>
+    <entry>
+      <string>Job_01/P0_CASE=TestCase_1.py,label=Label_01</string>
+      <ranges>2-9,11-13</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

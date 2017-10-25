@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.tikal.jenkins.plugins.multijob.MultiJobProject plugin="jenkins-multijob-plugin@1.28">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>COMMIT_ID</name>
+          <description></description>
+          <defaultValue>master</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>SUBMITTER</name>
+          <description></description>
+          <defaultValue>$BUILD_USER_ID </defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.6.0">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/ericxhp/CTR.git</url>
+        <credentialsId>691f36c9-f377-4662-b26d-ccc81798cef9</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>$COMMIT_ID</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <assignedNode>master</assignedNode>
+  <canRoam>false</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <customWorkspace>/JenkinsSpace/${JOB_NAME}</customWorkspace>
+  <builders>
+    <hudson.tasks.BatchFile>
+      <command>echo &quot;Inject Env&quot;&#xd;
+python -u SetEnv.py</command>
+    </hudson.tasks.BatchFile>
+    <EnvInjectBuilder plugin="envinject@2.1.5">
+      <info>
+        <propertiesFilePath>TEST_LIST_ENV.txt</propertiesFilePath>
+      </info>
+    </EnvInjectBuilder>
+    <com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
+      <phaseName>Execute Job_01</phaseName>
+      <phaseJobs>
+        <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+          <jobName>Job_01</jobName>
+          <currParams>true</currParams>
+          <exposedSCM>false</exposedSCM>
+          <disableJob>false</disableJob>
+          <parsingRulesPath></parsingRulesPath>
+          <maxRetries>0</maxRetries>
+          <enableRetryStrategy>false</enableRetryStrategy>
+          <enableCondition>false</enableCondition>
+          <abortAllJob>true</abortAllJob>
+          <condition></condition>
+          <configs>
+            <hudson.plugins.parameterizedtrigger.PredefinedBuildParameters plugin="parameterized-trigger@2.35.2">
+              <properties>CASE_LIST=${CASE_LIST}
+COMMIT_ID=${COMMIT_ID}</properties>
+              <textParamValueOnNewLine>false</textParamValueOnNewLine>
+            </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
+          </configs>
+          <killPhaseOnJobResultCondition>FAILURE</killPhaseOnJobResultCondition>
+          <buildOnlyIfSCMChanges>false</buildOnlyIfSCMChanges>
+          <applyConditionOnlyIfNoSCMChanges>false</applyConditionOnlyIfNoSCMChanges>
+        </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+        <com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+          <jobName>Job_02</jobName>
+          <currParams>true</currParams>
+          <exposedSCM>false</exposedSCM>
+          <disableJob>false</disableJob>
+          <parsingRulesPath></parsingRulesPath>
+          <maxRetries>0</maxRetries>
+          <enableRetryStrategy>false</enableRetryStrategy>
+          <enableCondition>false</enableCondition>
+          <abortAllJob>true</abortAllJob>
+          <condition></condition>
+          <configs>
+            <hudson.plugins.parameterizedtrigger.PredefinedBuildParameters plugin="parameterized-trigger@2.35.2">
+              <properties>CASE_LIST=${CASE_LIST}
+COMMIT_ID=${COMMIT_ID}</properties>
+              <textParamValueOnNewLine>false</textParamValueOnNewLine>
+            </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
+          </configs>
+          <killPhaseOnJobResultCondition>FAILURE</killPhaseOnJobResultCondition>
+          <buildOnlyIfSCMChanges>false</buildOnlyIfSCMChanges>
+          <applyConditionOnlyIfNoSCMChanges>false</applyConditionOnlyIfNoSCMChanges>
+        </com.tikal.jenkins.plugins.multijob.PhaseJobsConfig>
+      </phaseJobs>
+      <continuationCondition>ALWAYS</continuationCondition>
+      <executionType>PARALLEL</executionType>
+    </com.tikal.jenkins.plugins.multijob.MultiJobBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.8.8"/>
+    <org.jenkinsci.plugins.buildnamesetter.BuildNameSetter plugin="build-name-setter@1.6.7">
+      <template>#${BUILD_NUMBER}_${ENV,var=&quot;SUBMITTER&quot;}</template>
+      <runAtStart>true</runAtStart>
+      <runAtEnd>true</runAtEnd>
+    </org.jenkinsci.plugins.buildnamesetter.BuildNameSetter>
+    <org.jenkinsci.plugins.builduser.BuildUser plugin="build-user-vars-plugin@1.5"/>
+  </buildWrappers>
+  <pollSubjobs>false</pollSubjobs>
+</com.tikal.jenkins.plugins.multijob.MultiJobProject>

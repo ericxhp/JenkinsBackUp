@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slave>
+  <name>tester_03</name>
+  <description></description>
+  <remoteFS>/home/ufs/JenkinsWorkSpace/Slave_Space</remoteFS>
+  <numExecutors>1</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.22">
+    <host>shlufs06</host>
+    <port>22</port>
+    <credentialsId>afaca555-57fd-42df-b597-72992256329f</credentialsId>
+    <maxNumRetries>0</maxNumRetries>
+    <retryWaitTime>0</retryWaitTime>
+    <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy"/>
+  </launcher>
+  <label>Label_02</label>
+  <nodeProperties>
+    <hudson.tools.ToolLocationNodeProperty>
+      <locations>
+        <hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+          <type>hudson.plugins.git.GitTool$DescriptorImpl</type>
+          <name>Default</name>
+          <home>git</home>
+        </hudson.tools.ToolLocationNodeProperty_-ToolLocation>
+      </locations>
+    </hudson.tools.ToolLocationNodeProperty>
+  </nodeProperties>
+</slave>

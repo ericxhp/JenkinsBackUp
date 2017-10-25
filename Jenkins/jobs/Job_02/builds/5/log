@@ -1,0 +1,24 @@
+Started by upstream project "[8mha:////4BDwpXwMJoAd0AnTEkg6Xb3l+uFmGinL33WeBU46hPzmAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgYB/az8JP2AxKLUvJJ4LyATAAAlWn7FAAAA[0mParent_Job" build number [8mha:////4CG1HrArmBtyjMWyZlyTg8F4uICofEa0kPETKVMwasCfAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAwmoBn6WflJ+gGJRal5JfFeQKahEQAhzqDJxwAAAA==[0m12
+originally caused by:
+ Started by user [8mha:////4CNdTQL+/DZ8jWnhhqHr4Iivs1oKOhaWGIt8iS/s6azzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL91KLM5IpSAOZdoDHBAAAA[0mericxu
+[EnvInject] - Loading node environment variables.
+Building on master in workspace C:\Program Files (x86)\Jenkins\workspace\Job_02
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/ericxhp/CTR.git # timeout=10
+Fetching upstream changes from https://github.com/ericxhp/CTR.git
+ > git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+Setting http proxy: proxy.micron.com:8080
+ > git.exe fetch --tags --progress https://github.com/ericxhp/CTR.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "origin/master^{commit}" # timeout=10
+Checking out Revision d87dee75247030250a1476df80664a3c791f60f1 (origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f d87dee75247030250a1476df80664a3c791f60f1
+Commit message: "Add new print"
+ > git.exe rev-list d87dee75247030250a1476df80664a3c791f60f1 # timeout=10
+Triggering [8mha:////4EKwg6+7XFXwMpnRVaDj67O6KJFvNl/egkVCYnwqp+KFAAAAuR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgZD/az8JH2v/KR4AyP9AMN4Z8dgV9uQ1OIS58Ti1HhDvYJKnZzEpNQcWx8QCVIEAKnuPufmAAAA[0mJob_02 » TestCase_1.py,Label_02
+Triggering [8mha:////4BO0bcurDh7zomHbmZr3hPrDbV81OzgGac8R3S/Jo6W3AAAAuR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgZD/az8JH2v/KR4AyP9AMN4Z8dgV9uQ1OIS58Ti1HgjvYJKnZzEpNQcWx8QCVIEAGOjl0jmAAAA[0mJob_02 » TestCase_2.py,Label_02
+[8mha:////4EKwg6+7XFXwMpnRVaDj67O6KJFvNl/egkVCYnwqp+KFAAAAuR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgZD/az8JH2v/KR4AyP9AMN4Z8dgV9uQ1OIS58Ti1HhDvYJKnZzEpNQcWx8QCVIEAKnuPufmAAAA[0mJob_02 » TestCase_1.py,Label_02 completed with result SUCCESS
+[8mha:////4BO0bcurDh7zomHbmZr3hPrDbV81OzgGac8R3S/Jo6W3AAAAuR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz5EgZD/az8JH2v/KR4AyP9AMN4Z8dgV9uQ1OIS58Ti1HgjvYJKnZzEpNQcWx8QCVIEAGOjl0jmAAAA[0mJob_02 » TestCase_2.py,Label_02 completed with result SUCCESS
+Finished: SUCCESS

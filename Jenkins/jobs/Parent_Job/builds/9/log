@@ -1,0 +1,43 @@
+Started by user [8mha:////4CNdTQL+/DZ8jWnhhqHr4Iivs1oKOhaWGIt8iS/s6azzAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL91KLM5IpSAOZdoDHBAAAA[0mericxu
+[EnvInject] - Loading node environment variables.
+Building on master in workspace /JenkinsSpace/Parent_Job
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/ericxhp/CTR.git # timeout=10
+Fetching upstream changes from https://github.com/ericxhp/CTR.git
+ > git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+Setting http proxy: proxy.micron.com:8080
+ > git.exe fetch --tags --progress https://github.com/ericxhp/CTR.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "origin/master^{commit}" # timeout=10
+Checking out Revision d87dee75247030250a1476df80664a3c791f60f1 (origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f d87dee75247030250a1476df80664a3c791f60f1
+Commit message: "Add new print"
+ > git.exe rev-list d87dee75247030250a1476df80664a3c791f60f1 # timeout=10
+Set build name.
+New build name is '#9_$BUILD_USER_ID '
+[Parent_Job] $ cmd /c call C:\WINDOWS\TEMP\jenkins7607510122484802850.bat
+
+C:\JenkinsSpace\Parent_Job>echo "Inject Env" 
+"Inject Env"
+
+C:\JenkinsSpace\Parent_Job>python -u SetEnv.py 
+Get test case list
+TestCase_2.py TestCase_1.py
+Create env file done
+
+C:\JenkinsSpace\Parent_Job>exit 0 
+[EnvInject] - Injecting environment variables from a build step.
+[EnvInject] - Injecting as environment variables the properties file path 'TEST_LIST_ENV.txt'
+[EnvInject] - Variables injected successfully.
+    >> Job status: [Job_01] the 'build only if scm changes' feature is disabled.
+Starting build job [8mha:////4MsosPhpvxH30TDxD4ImZZA1ZMKF9w8bA6AoxOS7xxQpAAAAjR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgK2Hg0c/KT9L3yk+KNzDUBwAUv5wIkQAAAA==[0mJob_01.
+    >> Job status: [Job_02] the 'build only if scm changes' feature is disabled.
+Starting build job [8mha:////4InP/Kg1XEwVbNXfo1oC5q2apeWa7qKSM3X05uSrt1gpAAAAjR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgK2Hg0c/KT9L3yk+KNzDSBwDX7LEjkQAAAA==[0mJob_02.
+Finished Build : [8mha:////4ASFMSMO2XHy1hHxcdLlSGXz4txdro+gO+/wF9KCqKbFAAAAkB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmHg18/KT9L3yk+KNzDUt9TXBwCV3V0slAAAAA==[0m#9 of Job : [8mha:////4MsosPhpvxH30TDxD4ImZZA1ZMKF9w8bA6AoxOS7xxQpAAAAjR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgK2Hg0c/KT9L3yk+KNzDUBwAUv5wIkQAAAA==[0mJob_01 with status : [8mha:////4MhP2mz7wm5ZYV8G8Y3OupyB65jLRz+OtHaht/un/YckAAAAkh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgL2EQ08/KT9L3yk+KNzDUt9TXh+oCANedBVibAAAA[0mSUCCESS
+Finished Build : [8mha:////4PIeU2J1yCi56E9VO88xLmH4QdruwvGNEZpLbLkkkSBPAAAAkB+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgKmHg18/KT9L3yk+KNzDSN9LXBwCkSKhnlAAAAA==[0m#2 of Job : [8mha:////4InP/Kg1XEwVbNXfo1oC5q2apeWa7qKSM3X05uSrt1gpAAAAjR+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgK2Hg0c/KT9L3yk+KNzDSBwDX7LEjkQAAAA==[0mJob_02 with status : [8mha:////4N1ZOpLjOpTVou4gWB/5mDiLcAkEG9PJUffSoM2ORb1hAAAAkh+LCAAAAAAAAP9b85aBtbiIQSajNKU4P08vOT+vOD8nVc+jsiC1KCczL9svvyTVzHb1RttJBUeZGJg8GdhyUvPSSzJ8GJhLi3JKGIR8shLLEvVzEvPS9YNLijLz0q0rihik0IxzhtAgwxgggJGJgaGiAMhgL2EQ08/KT9L3yk+KNzDSN9LXh+oCANC0e9ebAAAA[0mFAILURE
+Set build name.
+New build name is '#9_ericxu '
+Variable with name 'BUILD_DISPLAY_NAME' already exists, current value: '#9_$BUILD_USER_ID ', new value: '#9_ericxu '
+Finished: FAILURE
